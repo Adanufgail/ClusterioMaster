@@ -2,7 +2,7 @@ services:
   web:
     image: mlubert/clusteriomaster
     ports:
-      - "12345:12345"
+      - "12346:12345"
     volumes:
       - factorio:/clusterio/factorio
       - mods:/clusterio/sharedMods
