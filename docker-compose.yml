@@ -1,0 +1,23 @@
+services:
+  web:
+    image: adanufgail/clusteriomaster
+    ports:
+      - "12345:12345"
+    volumes:
+      - factorio:/clusterio/factorio
+      - mods:/clusterio/sharedMods
+    env_file:
+      -  factorio.env
+  ofsm:
+    image: ofsm/ofsm:latest
+    ports: 
+      - "80:80"
+    volumes:
+      - factorio:/opt/factorio
+      - mods:/opt/factorio/mods
+    env_file:
+      - ofsm.env
+
+volumes:
+  factorio:
+  mods:

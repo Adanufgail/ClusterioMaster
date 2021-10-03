@@ -1,0 +1,12 @@
+{
+  "name": "clusterio-install",
+  "private": true,
+  "dependencies": {
+    "@clusterio/master": "^2.0.0-alpha.9",
+    "@clusterio/plugin-global_chat": "^2.0.0-alpha.9",
+    "@clusterio/plugin-inventory_sync": "^2.0.0-alpha.9.b",
+    "@clusterio/plugin-research_sync": "^2.0.0-alpha.9",
+    "@clusterio/plugin-statistics_exporter": "^2.0.0-alpha.9",
+    "@clusterio/plugin-subspace_storage": "^2.0.0-alpha.9"
+  }
+}

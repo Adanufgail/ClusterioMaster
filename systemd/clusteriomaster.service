@@ -1,0 +1,13 @@
+[Unit]
+Description=Clusterio Master
+
+[Service]
+User=root
+Group=nogroup
+WorkingDirectory=/home/adama/clusterio
+KillMode=mixed
+KillSignal=SIGINT
+ExecStart=/home/adama/clusterio/node_modules/.bin/clusteriomaster run --log-level=warn
+
+[Install]
+WantedBy=multi-user.target
