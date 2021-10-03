@@ -1,6 +1,6 @@
 services:
   web:
-    image: adanufgail/clusteriomaster
+    image: mlubert/clusteriomaster
     ports:
       - "12345:12345"
     volumes:
@@ -11,7 +11,7 @@ services:
   ofsm:
     image: ofsm/ofsm:latest
     ports: 
-      - "80:80"
+      - "81:80"
     volumes:
       - factorio:/opt/factorio
       - mods:/opt/factorio/mods
